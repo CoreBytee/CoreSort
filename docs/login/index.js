@@ -3,7 +3,7 @@ var LoginData = {
     "redirect_uri": `${location.protocol}//${location.hostname}/login/callback/`,
     "response_type": "code",
     "scope": "identify",
-    "prompt": "consent"
+    "prompt": "none"
 }
 
 const encodeGetParams = p => 
@@ -11,7 +11,12 @@ const encodeGetParams = p =>
 
 
 function load() {
-    document.getElementById("login-button").href = `https://discord.com/oauth2/authorize?${encodeGetParams(LoginData)}`
+    Button = document.getElementById("login-button")
+    Button.href = `https://discord.com/oauth2/authorize?${encodeGetParams(LoginData)}`
+
+    if (Query.click != null) {
+      Button.click()
+    }
 }
 
 window.addEventListener("load", load)
