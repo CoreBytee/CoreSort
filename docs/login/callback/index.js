@@ -19,7 +19,7 @@ async function load() {
     }
 
     var UserData = await Response.json()
-    sessionStorage.UserData = UserData
+    sessionStorage.UserData = await JSON.stringify(UserData)
     document.getElementById("title").innerText = `Welcome back ${UserData.Name}`
 
     await Sleep(1000)
