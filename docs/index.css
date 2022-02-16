@@ -3,38 +3,63 @@ html,body { height: 100%; width: 100%; margin: 0px; padding: 0px; }
 .wrapper {
     padding: 20px;
     width: 100% - 40px;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 80px);
 }
 
 .block {
-    padding: 25px !important;
-    height: 100%;
+    padding: 20px !important;
 }
 
+.top {
+    width: calc(100% - 40px);
+
+    padding: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.top img {vertical-align: middle;}
+.top h1 {display: inline; vertical-align: middle; padding-left: 10px;}
+
 .items {
-    width: calc(70% - 60px);
+    width: calc(70% - 50px);
+    height: calc(100% - 100px);
 
     display: inline-block;
 }
 
 .information {
-    width: calc(30% - 60px);
+    width: calc(30% - 50px);
+    height: calc(100% - 100px);
+
     float: right;
 }
 
 .item {
     background-color: var(--background-secondary-alt);
+    
     border-radius: 20px;
-    padding: 5px;
-    position: absolute;
+    padding: 15px;
 }
 
 .item-name {
-    padding-left: 50px;
+    padding-left: 15px;
+    display: inline;
+    vertical-align: middle;
 }
 
 .item-image {
-    padding: 10px;
-    width: 25%;
-    height: 25%;
+    padding: 15px;
+    display: inline;
+    vertical-align: middle;
+}
+
+.item-amount-holder {
+    height: 100%;
+    float: right;
+    vertical-align: middle;
+}
+
+.item-amount {
+
 }

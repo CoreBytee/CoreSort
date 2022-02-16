@@ -12,6 +12,10 @@ body {
     padding: 50px;
 }
 
+body {
+    color: var(--text-normal) !important;
+}
+
 a {
     color: var(--text-normal) !important;
 }

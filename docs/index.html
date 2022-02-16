@@ -17,16 +17,33 @@
         <script src="./index.js" type="module"></script>
     </head>
     <body class="theme-dark">
+        
+        
         <div class="wrapper">
+            <div class="block top">
+                <img src="/Image/Barrel.png" width="32" height="32">
+                <h1>CoreSort</h1>
+            </div>
             <div class="block items">
                 <div class="item">
-                    <script>
-                        console.log(document.currentScript.parentElement.getElementsByClassName("item-name").item(0))
-                    </script>
-                    <img src="/Image/Missing.png" class="item-image">
-                    <h1 class="item-name">
+                    <img class="item-image">
+                    <h1 class="item-name" id="item-name">
                         Placeholder
                     </h1>
+
+                    <div class="item-amount-holder">
+                        <input type="number" name="Amount" id="" class="item-amount" placeholder="Amount">
+                    </div>
+                    
+                    <script>
+                        var Size = document.currentScript.parentElement.getElementsByClassName("item-name")[0].clientHeight
+                        var Image = document.currentScript.parentElement.getElementsByClassName("item-image")[0]
+
+                        Image.height = Size
+                        Image.width = Size
+
+                        document.currentScript.remove()
+                    </script>
                 </div>
             </div>
 
