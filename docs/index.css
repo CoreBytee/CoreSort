@@ -1,0 +1,40 @@
+html,body { height: 100%; width: 100%; margin: 0px; padding: 0px; }
+
+.wrapper {
+    padding: 20px;
+    width: 100% - 40px;
+    height: calc(100vh - 90px);
+}
+
+.block {
+    padding: 25px !important;
+    height: 100%;
+}
+
+.items {
+    width: calc(70% - 60px);
+
+    display: inline-block;
+}
+
+.information {
+    width: calc(30% - 60px);
+    float: right;
+}
+
+.item {
+    background-color: var(--background-secondary-alt);
+    border-radius: 20px;
+    padding: 5px;
+    position: absolute;
+}
+
+.item-name {
+    padding-left: 50px;
+}
+
+.item-image {
+    padding: 10px;
+    width: 25%;
+    height: 25%;
+}
