@@ -6,7 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>CoreSort | Cart</title>
-        <link rel="shortcut icon" href="/Image/Barrel.png" type="image/x-icon">
 
         <link rel="stylesheet" href="/Style/DiscordColors.css">
         <link rel="stylesheet" href="/Style/Center.css">
@@ -15,25 +14,27 @@
         <script src="/Script/Query.js"></script>
 
         <link rel="stylesheet" href="./index.css">
+        <script src="./index.js" type="module"></script>
     </head>
-    
     <body class="theme-dark">
+        
+        
         <div class="wrapper">
             <div class="block top">
                 <img src="/Image/Barrel.png" width="32" height="32">
                 <h1>CoreSort</h1>
             </div>
-
-            <div class="block panel items">
+            <div class="block items">
                 <div class="item">
-                    <div class="item-info-holder">
-                        <img src="/Image/Missing.png" class="item-image" alt="">
-                        <h1 class="item-name">Placeholder</h1>
-                    </div>
+                    <img class="item-image">
+                    <h1 class="item-name" id="item-name">
+                        Placeholder
+                    </h1>
+
                     <div class="item-amount-holder">
-                        <p>Amount:</p>
-                        <input type="number" placeholder="Amount" value="1" min="1">
+                        <input type="number" placeholder="Amount" class="item-amount">
                     </div>
+                    
                     <script>
                         var Size = document.currentScript.parentElement.getElementsByClassName("item-name")[0].clientHeight
                         var Image = document.currentScript.parentElement.getElementsByClassName("item-image")[0]
@@ -45,9 +46,11 @@
                     </script>
                 </div>
             </div>
-            <div class="block panel information">
 
+            <div class="block information">
+                <h1>WIP</h1>
             </div>
         </div>
+       
     </body>
 </html>
