@@ -34,12 +34,23 @@ body {
     vertical-align: middle;
 }
 
+.change-theme-holder {
+    width: 10%;
+    height: 100%;
+    float: right;
+
+    margin-right: 20px;
+}
+
+.change-theme {
+    width: 100%;
+}
+
 .panel {
     margin-top: 20px;
     padding: 20px;
 
     height: calc(100% - 60px);
-
 }
 
 .items {
@@ -58,7 +69,7 @@ body {
 .item h1 {
     display: inline-block;
     vertical-align: middle;
-    padding-left: 20px;
+    padding-left: 200px;
     padding: 0;
 }
 
@@ -90,6 +101,7 @@ body {
 }
 
 .item-remove-button {
+    padding: 0 !important;
     height: 50%;
     width: 10%;
     color: var(--text-normal);

@@ -11,7 +11,7 @@ html body{
 }
 
 .button {
-    background-color: var(--background-accent);
+    background-color: var(--background-tertiary);
     color: var(--interactive-active);
     padding: 15px;
     border-radius: 10px;
