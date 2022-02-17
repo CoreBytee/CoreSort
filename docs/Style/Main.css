@@ -12,9 +12,12 @@ html body{
 
 .button {
     background-color: var(--background-accent);
+    color: var(--interactive-active);
     padding: 15px;
     border-radius: 10px;
     text-decoration: none;
+
+    border: none;
 }
 
 .button:hover {
