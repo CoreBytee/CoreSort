@@ -20,74 +20,48 @@
     </head>
     
     <body>
-        <div class="wrapper">
-            <div class="block top">
-                <img src="/Image/Barrel.png" width="32" height="32">
-                <h1>CoreSort</h1>
-                <div class="change-theme-holder">
-                    <br>
-                    <button class="button change-theme" id="change-theme">
-                        <strong>
-                            Swap Theme
-                        </strong>
-                    </button>
-                </div>
-                
+        <div class="block top">
+            <img src="/Image/Barrel.png" height="50%">
+            <h1>CoreSort</h1>
+            <button class="button change-theme" id="change-theme">
+                <strong>
+                    Swap Theme
+                </strong>
+            </button>
+        </div>
+
+        <div class="block items">
+            <div class="block item">
+                <img src="/Image/Missing.png" width="4%">
+                <h1>
+                    Placeholder
+                    <select name="test" id="">
+                        <option value="test">test</option>
+                    </select>
+                </h1>
+                <input type="number" class="button" placeholder="Amount" min="1" value="1">
+                <button class="button">
+                    <strong>
+                        X
+                    </strong>
+                </button>
             </div>
+        </div>
+        
+        <div class="block information">
+            <h1 class="title">
+                Your order
+            </h1>
 
-            <div class="block panel items">
-                <div class="item">
-                    <div class="item-info-holder">
-                        <img src="/Image/Missing.png" class="item-image" alt="">
-                        <h1 class="item-name">Placeholder</h1>
-                    </div>
-                    <div class="item-remove-button-holder">
-                        <br>
-                        <button class="item-remove-button button"><strong>X</strong></button>
-                    </div>
-                    <div class="item-amount-holder">
-                        <br>
-                        <a>Amount:</a><br>
-                        <input type="number" placeholder="Amount" value="1" min="1">
-                    </div>
-                    
-                    
-                    <script>
-                        var Size = document.currentScript.parentElement.getElementsByClassName("item-name")[0].clientHeight
-                        var Image = document.currentScript.parentElement.getElementsByClassName("item-image")[0]
-                        var Button = document.currentScript.parentElement.getElementsByClassName("item-remove-button")[0]
-
-                        Image.height = Size
-                        Image.width = Size
-
-                        Button.style.height = `${Size}px`
-                        Button.style.width = `${Size}px`
-
-                        document.currentScript.remove()
-                    </script>
-                </div>
-            </div>  
-            <div class="panel information">
-                <div class="block order-info">
-                    <h1>Your order</h1>
-                    <br>
-                    <div class="left">
-                        <a>Total items:</a>
-                        <br>
-                        <a>Unique items:</a>
-                    </div>
-                    <div class="right">
-                        <a>0</a>
-                        <br>
-                        <a>0</a>
-                    </div>
-                    
-                </div>
-
-                <div class="block system-info">
-
-                </div>
-            </div>
+            <button class="button clear">
+                CLEAR ORDER
+            </button>
+            <button class="button add">
+                ADD ITEM
+            </button>
+            <button class="button send">
+                SEND ORDER
+            </button>
         </div>
     </body>
 </html>

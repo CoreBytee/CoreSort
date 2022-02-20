@@ -1,0 +1,147 @@
+html, head, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+}
+
+.wrapper {
+    margin: 20px;
+    padding: 0px;
+    width: calc(100% - 40px);
+    height: calc(100% - (120px) * 1);
+}
+
+.top {
+    width: calc(100% - 0px);
+    padding: 0;
+}
+
+.top h1 {
+    padding-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 200%;
+}
+
+.top img {
+    padding-left: 40px;
+    padding: 20px;
+    vertical-align: middle;
+}
+
+.change-theme-holder {
+    width: 10%;
+    height: 100%;
+    float: right;
+
+    margin-right: 20px;
+}
+
+.change-theme {
+    width: 100%;
+}
+
+.panel {
+    margin-top: 20px;
+    padding: 20px;
+
+    height: calc(100% - 60px);
+}
+
+.items {
+    width: calc(80% - 100px);
+    display: inline-block;
+    overflow-y: scroll;
+}
+
+.item {
+    background-color: var(--background-secondary-alt);
+    border-radius: 20px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.item h1 {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 200px;
+    padding: 0;
+}
+
+.item img {
+    vertical-align: middle;
+    padding-left: 20px;
+}
+
+.item-info-holder {
+    display: inline-block;
+}
+
+.item-amount-holder {
+    height: 100%;
+    width: 25%;
+    float: right;
+    top: 50%;
+}
+
+.item-amount-holder input {
+    right: 0;
+    vertical-align: middle;
+}
+
+.item-remove-button-holder {
+    height: 100%;
+    width: 5%;
+    float: right;
+}
+
+.item-remove-button {
+    padding: 0 !important;
+    height: 50%;
+    width: 10%;
+    color: var(--text-normal);
+}
+
+.information {
+    width: 22%;
+    float: right;
+    padding: 0;
+}
+
+.order-info h1 {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+
+.order-info {
+    text-align: center;
+    height: 50%;
+    padding: 0px !important;
+    padding-top: 50px !important;
+
+}
+
+.left {
+    width: 40%;
+    text-align: right !important;
+    display: inline-block;
+}
+
+.right {
+    width: 40%;
+    text-align: left !important;
+    display: inline-block;
+}
+
+.system-info {
+    margin-top: 20px;
+    height: calc(30% - 30px);
+}

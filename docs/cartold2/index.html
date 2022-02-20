@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-dark">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>CoreSort | Cart</title>
+        <link rel="shortcut icon" href="/Image/Barrel.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="/Style/DiscordColors.css">
+        <link rel="stylesheet" href="/Style/Center.css">
+        <link rel="stylesheet" href="/Style/Main.css">
+
+        <script src="/Script/Query.js"></script>
+        <script src="/Script/Theme.js"></script>
+
+        <script src="./index.js"></script>
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    
+    <body>
+        <div class="wrapper">
+            <div class="block top">
+                <img src="/Image/Barrel.png" width="32" height="32">
+                <h1>CoreSort</h1>
+                <div class="change-theme-holder">
+                    <br>
+                    <button class="button change-theme" id="change-theme">
+                        <strong>
+                            Swap Theme
+                        </strong>
+                    </button>
+                </div>
+                
+            </div>
+
+            <div class="block panel items">
+                <div class="item">
+                    <div class="item-info-holder">
+                        <img src="/Image/Missing.png" class="item-image" alt="">
+                        <h1 class="item-name">Placeholder</h1>
+                    </div>
+                    <div class="item-remove-button-holder">
+                        <br>
+                        <button class="item-remove-button button"><strong>X</strong></button>
+                    </div>
+                    <div class="item-amount-holder">
+                        <br>
+                        <a>Amount:</a><br>
+                        <input type="number" placeholder="Amount" value="1" min="1">
+                    </div>
+                    
+                    
+                    <script>
+                        var Size = document.currentScript.parentElement.getElementsByClassName("item-name")[0].clientHeight
+                        var Image = document.currentScript.parentElement.getElementsByClassName("item-image")[0]
+                        var Button = document.currentScript.parentElement.getElementsByClassName("item-remove-button")[0]
+
+                        Image.height = Size
+                        Image.width = Size
+
+                        Button.style.height = `${Size}px`
+                        Button.style.width = `${Size}px`
+
+                        document.currentScript.remove()
+                    </script>
+                </div>
+            </div>  
+            <div class="panel information">
+                <div class="block order-info">
+                    <h1>Your order</h1>
+                    <br>
+                    <div class="left">
+                        <a>Total items:</a>
+                        <br>
+                        <a>Unique items:</a>
+                    </div>
+                    <div class="right">
+                        <a>0</a>
+                        <br>
+                        <a>0</a>
+                    </div>
+                    
+                </div>
+
+                <div class="block system-info">
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

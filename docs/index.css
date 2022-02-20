@@ -1,147 +1,143 @@
-html, head, body {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-}
+html, head, body {padding: 0;margin: 0;width: 100%;height: 100%;}
+body {overflow: none;}
 
-body {
-    overflow: hidden;
-}
-
-.wrapper {
-    margin: 20px;
+h1, h2, h3, h4, h5, h6{
     padding: 0px;
-    width: calc(100% - 40px);
-    height: calc(100% - (120px) * 1);
+    margin: 0px;
 }
+
+/* TopBar */
 
 .top {
-    width: calc(100% - 0px);
-    height: 15%;
-    padding: 0;
-}
+    left: 2%;
+    top: 2%;
 
-.top h1 {
-    padding-left: 10px;
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 200%;
+    height: 10%;
+    width: 96%;
+    padding: 0 !important;
+
+    position: absolute;
+
+    align-items: center;
+    display: flex;
 }
 
 .top img {
-    padding-left: 40px;
-    padding: 20px;
-    vertical-align: middle;
+    padding-left: 20px;
 }
 
-.change-theme-holder {
-    width: 10%;
-    height: 100%;
-    float: right;
-
-    margin-right: 20px;
+.top h1 {
+    padding-left: 20px;
 }
 
 .change-theme {
-    width: 100%;
+    margin-left: calc(100% - (7.5% * 2) + 5%);
+    position: absolute;
+    width: 7.5%;
+
+    font-size: 0.75vw;
 }
 
-.panel {
-    margin-top: 20px;
-    padding: 20px;
-
-    height: calc(100% - 60px);
-}
+/* Left-Item panel */
 
 .items {
-    width: calc(80% - 100px);
-    height: 87.5%;
-    display: inline-block;
-    overflow-y: scroll;
+    width: 70%;
+    height: 84%;
+    padding: 0px !important;
+    top: 14%;
+    left: 2%;
+
+    position: absolute;
+    overflow-y: auto;
 }
 
 .item {
     background-color: var(--background-secondary-alt);
-    border-radius: 20px;
-    height: 80px;
-    margin-bottom: 20px;
-}
 
-.item h1 {
-    display: inline-block;
-    vertical-align: middle;
-    padding-left: 200px;
-    padding: 0;
-}
-
-.item img {
-    vertical-align: middle;
-    padding-left: 20px;
-}
-
-.item-info-holder {
-    display: inline-block;
-}
-
-.item-amount-holder {
-    height: 100%;
-    width: 25%;
-    float: right;
-    top: 50%;
-}
-
-.item-amount-holder input {
-    right: 0;
-    vertical-align: middle;
-}
-
-.item-remove-button-holder {
-    height: 100%;
-    width: 5%;
-    float: right;
-}
-
-.item-remove-button {
     padding: 0 !important;
-    height: 50%;
-    width: 10%;
-    color: var(--text-normal);
+    height: 75px;
+    width: 96%;
+    margin: 2%;
+
+    align-items: center;
+    display: flex;
 }
+
+.item img, h1 {
+    padding-left: 20px;
+    display: inline-block;
+}
+
+.item input {
+    border: none;
+    color: var(--interactive-normal);
+    right: 10%;
+    position: absolute;
+}
+
+.item button {
+    right: 5%;
+    color: var(--interactive-normal);
+    position: absolute;
+}
+
+/* Right-Information panel */
 
 .information {
-    width: 22%;
-    height: 87.5;
-    float: right;
-    padding: 0;
+    width: 24%;
+    height: 84%;
+    top: 14%;
+    right: 2%;
+
+    padding: 0px !important;
+    position: absolute;
+
+    text-align: center !important;
+    
+    align-items: center;
+    display: flex;
 }
 
-.order-info h1 {
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+.title {
+    text-align: center !important;
 
+    padding-left: 0 !important;
+    padding-top: 10%;
+
+    width: 50%;
+    left: 25%;
+    top: 2%;
+
+    position: absolute;
+    
 }
 
-.order-info {
-    text-align: center;
-    height: 50%;
-}
-
-.left {
+.clear {
+    left: 5%;
+    bottom: 10%;
     width: 40%;
-    text-align: right !important;
-    display: inline-block;
+
+    height: 5%;
+
+    position: absolute;
 }
 
-.right {
+.add {
+    right: 5%;
+    bottom: 10%;
     width: 40%;
-    text-align: left !important;
-    display: inline-block;
+
+    height: 5%;
+
+    position: absolute;
 }
 
-.system-info {
-    margin-top: 20px;
-    height: calc(17%);
+.send {
+    left: 25%;
+    bottom: 2%;
+    width: 50%;
+
+    height: 5%;
+
+    position: absolute;
 }
