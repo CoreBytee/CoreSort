@@ -113,6 +113,8 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .clear {
+    text-align: center !important;
+
     left: 5%;
     bottom: 10%;
     width: 40%;
@@ -123,6 +125,8 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .add {
+    text-align: center !important;
+
     right: 5%;
     bottom: 10%;
     width: 40%;
@@ -133,6 +137,8 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .send {
+    text-align: center !important;
+
     left: 25%;
     bottom: 2%;
     width: 50%;
